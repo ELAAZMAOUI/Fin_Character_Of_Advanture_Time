@@ -1,0 +1,205 @@
+body
+{
+    background-color: #21c1fb;
+}
+.mainScecton
+{
+
+position: relative;
+width: 400px;
+height: 320px;
+background-color: white;
+
+margin: auto;
+margin-top: 10%;
+border-style: solid;
+border-color: black;
+border-width: 4px;
+
+
+
+}
+.right-ear
+{
+background-color: white;
+width: 12%;
+height: 15%;
+margin-top: -13%;
+border-top-style: solid;
+border-left-style: solid;
+border-right-style: solid;
+border-color: black;
+border-top-right-radius: 50%;
+border-top-left-radius: 50%;
+margin-left: -1%;
+border-width: 4px;
+}
+.left-ear
+{
+background-color: white;
+width: 12%;
+height: 15%;
+margin-top: -13%;
+border-top-style: solid;
+border-left-style: solid;
+border-right-style: solid;
+border-color: black;
+border-top-right-radius: 50%;
+border-top-left-radius: 50%;
+margin-left: 87%;
+border-width: 4px;
+}
+.face
+{
+    width: 86%;
+    height: 81%;
+    background-color: #fdd4c2;
+    margin: auto;
+    margin-top: 7%;
+    border: solid black;
+    border-radius: 50%;
+
+}
+.eyes
+{width: 46%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 10%;
+            animation-duration: 10s;
+animation-delay: 3s;
+animation-name: big-face;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+.right-eye
+{
+    width: 12%;
+    height: 45%;
+    background-color: black;
+animation-name: open_eye;
+animation-delay: 2s;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+    border-radius: 50%;
+}
+    .left-eye
+{
+        width: 12%;
+        height: 45%;
+    background-color: black;
+    animation-name: open_eye;
+    animation-delay: 2s;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+    border-radius: 50%;
+
+}
+.mouth
+{
+    width: 40%;
+height: 40%;
+border: 3px solid transparent; 
+    border-bottom:solid black 3px;
+    margin: auto;
+    margin-top: -20%;
+    animation-duration: 10s;
+animation-delay: 2s;
+animation-name: smile;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+
+}
+
+.light_1
+{opacity: 0;
+width: 50%;
+height: 30%;
+transform: rotate(-10deg);
+background-color: white;
+border-radius: 50%;
+position: relative;
+top: 10%;
+left: 20%;
+ box-shadow: 1px 1px 1px white;
+                  animation-duration: 10s;
+animation-delay: 3s;
+animation-name: display-light;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+
+.light_2
+{	opacity: 0;
+width: 30%;
+height: 20%;
+transform: rotate(10deg);
+background-color: white;
+border-radius: 50%;
+position: relative;
+top: 19%;
+left: 20%;
+         box-shadow: 1px 1px 1px white;
+animation-duration: 10s;
+animation-delay: 3s;
+animation-name: display-light;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+.light_3
+{opacity: 0;
+    width: 30%;
+height: 20%;
+transform: rotate(-30deg);
+background-color: white;
+border-radius: 50%;
+position: relative;
+top: 0%;
+left: 60%;
+box-shadow: 1px 1px 1px white;
+animation-duration: 10s;
+animation-delay: 3s;
+animation-name: display-light;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+    @keyframes open_eye
+    {   10% {
+    width: 21%;
+    height:47.5%;
+  }
+  20% {
+      width: 30%;
+    height:50%;
+  }
+
+    }
+
+    @keyframes smile
+    {   10% {
+   border-radius: 25%;
+  }
+  20% {
+     border-radius: 50%;
+  }
+    }
+
+        @keyframes big-face
+    {   10% {
+   width: 56%;
+  }
+  20% {
+  width: 66%;
+  }
+    }
+
+    @keyframes display-light
+    {   10% {
+   opacity: 0.5;
+  }
+  20% {
+   opacity: 1;
+  }
+    }
